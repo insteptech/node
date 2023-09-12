@@ -7,7 +7,7 @@ const router = express.Router();
 let BrainTree_merchantId = "4c2xzwscm5yc6zjr"
 let BrainTree_PublicKey = "6zyy89tzzqn68cm5"
 let BrainTree_PrivateKey = "be5236816732d1ddbd212c43e339aaeb"
-router.get('/', (req, res) => res.send(200))
+router.get('/', (req, res) => res.send("HI, This is repsonse"))
 router.post('/checkout', (req, res) => {
     const paymentGateWay = new braintree.BraintreeGateway({
         environment: braintree.Environment.Sandbox,
